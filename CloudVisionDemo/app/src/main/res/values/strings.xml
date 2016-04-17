@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">CloudVisionDemo</string>
+    <string name="action_settings">Settings</string>
+    <string name="cloud_vision_description">The Vision API allows easy integration of vision
+        detection features within developer applications, including image labeling,
+        face and landmark detection, optical character recognition (OCR), and tagging
+        of explicit content.
+    </string>
+
+    <string name="label_detection">Label Detection</string>
+    <string name="label_detection_description"> A LABEL_DETECTION request annotates an
+        image with a label (or "tag") that is selected based on the image content. For
+        example, a picture of a barn may produce a label of "barn", "farm", or some
+        other similar annotation.
+    </string>
+
+    <string name="optical_character_recognition">Optical Character Recognition</string>
+    <string name="ocr_description">Optical Character Recognition (OCR) enables you
+        to detect text within your images, along with automatic language
+        identification. The Vision API supports a broad set of languages.
+    </string>
+</resources>
