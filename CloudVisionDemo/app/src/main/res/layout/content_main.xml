@@ -46,6 +46,7 @@
         </android.support.v7.widget.CardView>
 
 
+        <!-- DEMO -->
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -56,31 +57,30 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="16dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:paddingBottom="8dp"
-                    android:text="@string/label_detection"
-                    android:textSize="32sp" />
+                android:orientation="vertical">
 
                 <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#2196F3">
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:src="@drawable/insight_text"
+                    android:padding="16dp" />
 
-                    <ImageView
-                        android:id="@+id/imageView"
+                    <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentRight="true"
-                        android:layout_alignParentStart="true"
-                        android:layout_below="@+id/textView"
-                        android:src="@drawable/insight_text" />
+                        android:paddingBottom="8dp"
+                        android:text="@string/label_detection"
+                        android:textSize="32sp"
+                        android:textColor="#212121"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+
 
                     <TextView
                         android:id="@+id/textView"
@@ -89,10 +89,13 @@
                         android:layout_alignParentLeft="true"
                         android:layout_alignParentStart="true"
                         android:layout_marginTop="8dp"
-                        android:layout_toEndOf="@+id/imageView"
-                        android:layout_toRightOf="@+id/imageView"
-                        android:text="@string/label_detection_description" />
+                        android:text="@string/label_detection_description"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"/>
 
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -100,19 +103,92 @@
                         android:layout_alignParentLeft="true"
                         android:onClick="labelDetection"
                         android:text="Try It"
+                        android:textColor="#FF5252"
                         style="?android:attr/borderlessButtonStyle"
-                        android:id="@+id/button2" />
+                        android:id="@+id/button2"
+                        android:paddingLeft="16dp"/>
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:onClick="labelDetection"
                         android:text="Learn More"
+                        android:textColor="#FF5252"
                         android:layout_alignParentBottom="true"
                         android:layout_alignParentRight="true"
-                        android:layout_alignParentEnd="true" />
+                        style="?android:attr/borderlessButtonStyle"
+                        android:paddingRight="16dp"/>
                 </RelativeLayout>
             </LinearLayout>
         </android.support.v7.widget.CardView>
+
+
+        <!--<android.support.v7.widget.CardView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="16dp"-->
+            <!--android:layout_marginLeft="16dp"-->
+            <!--android:layout_marginRight="16dp">-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical"-->
+                <!--android:padding="16dp">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="8dp"-->
+                    <!--android:paddingBottom="8dp"-->
+                    <!--android:text="@string/label_detection"-->
+                    <!--android:textSize="32sp" />-->
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content">-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/imageView"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentEnd="true"-->
+                        <!--android:layout_alignParentLeft="true"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_alignParentStart="true"-->
+                        <!--android:layout_below="@+id/textView"-->
+                        <!--android:src="@drawable/insight_text" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/textView"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentLeft="true"-->
+                        <!--android:layout_alignParentStart="true"-->
+                        <!--android:layout_marginTop="8dp"-->
+                        <!--android:layout_toEndOf="@+id/imageView"-->
+                        <!--android:layout_toRightOf="@+id/imageView"-->
+                        <!--android:text="@string/label_detection_description" />-->
+
+                    <!--<Button-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentBottom="true"-->
+                        <!--android:layout_alignParentLeft="true"-->
+                        <!--android:onClick="labelDetection"-->
+                        <!--android:text="Try It"-->
+                        <!--style="?android:attr/borderlessButtonStyle"-->
+                        <!--android:id="@+id/button2" />-->
+                    <!--<Button-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:onClick="labelDetection"-->
+                        <!--android:text="Learn More"-->
+                        <!--android:layout_alignParentBottom="true"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_alignParentEnd="true" />-->
+                <!--</RelativeLayout>-->
+            <!--</LinearLayout>-->
+        <!--</android.support.v7.widget.CardView>-->
 
 
         <android.support.v7.widget.CardView
@@ -134,7 +210,7 @@
                     android:layout_marginTop="8dp"
                     android:paddingBottom="8dp"
                     android:text="@string/optical_character_recognition"
-                    android:textSize="32sp" />
+                    android:textSize="32sp"/>
 
                 <RelativeLayout
                     android:layout_width="wrap_content"
