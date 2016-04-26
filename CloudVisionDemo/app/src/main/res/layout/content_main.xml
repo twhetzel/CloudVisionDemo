@@ -180,7 +180,7 @@
                         android:layout_alignParentStart="true"
                         android:onClick="ocrDetection"
                         android:text="Try It"
-                        android:textColor="#FF5252"
+                        android:textColor="#4CAF50"
                         style="?android:attr/borderlessButtonStyle"/>
 
                     <Button
@@ -192,7 +192,7 @@
                         android:onClick="labelDetection"
                         android:paddingRight="16dp"
                         android:text="Learn More"
-                        android:textColor="#FF5252" />
+                        android:textColor="#4CAF50" />
                 </RelativeLayout>
             </LinearLayout>
         </android.support.v7.widget.CardView>
