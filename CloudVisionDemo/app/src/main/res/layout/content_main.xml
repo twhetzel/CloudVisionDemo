@@ -72,14 +72,17 @@
                         android:src="@drawable/insight_text" />
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
-                        android:layout_centerHorizontal="true"
+                        android:textAlignment="center"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
                         android:paddingBottom="8dp"
                         android:text="@string/label_detection"
                         android:textColor="#212121"
-                        android:textSize="32sp" />
+                        android:textSize="22sp"
+                        android:background="#2196F3"/>
                 </RelativeLayout>
 
 
@@ -149,15 +152,17 @@
                     android:src="@drawable/detect_text" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/optical_character_recognition"
-                    android:textSize="32sp"
+                    android:textSize="22sp"
                     android:textColor="#212121"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="8dp"
                     android:layout_alignParentBottom="true"
-                    android:layout_alignLeft="@+id/imageView2"
-                    android:layout_alignStart="@+id/imageView2"
-                    android:padding="16dp" />
+                    android:textAlignment="center"
+                    android:background="#FFFF8D" />
                 </RelativeLayout>
 
                 <TextView
